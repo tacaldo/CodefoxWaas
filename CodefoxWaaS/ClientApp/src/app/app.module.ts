@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponentComponent } from './components/dashboard/dashboard-component.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -20,7 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    DashboardComponentComponent,
+    DashboardComponent,
     FetchDataComponent
   ],
   imports: [
@@ -30,10 +30,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatSliderModule,
     MatButtonModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      //{ path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: DashboardComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'dashboard', component: DashboardComponentComponent },
+      { path: 'dashboard', component: DashboardComponent },
     ]),
     BrowserAnimationsModule
   ],

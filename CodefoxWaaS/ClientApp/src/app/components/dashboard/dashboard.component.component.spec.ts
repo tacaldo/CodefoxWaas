@@ -1,20 +1,20 @@
-﻿import { TestBed, async, ComponentFixture, ComponentFixtureAutoDetect } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture, ComponentFixtureAutoDetect } from '@angular/core/testing';
 import { BrowserModule, By } from "@angular/platform-browser";
-import { DashboardComponentComponent } from './dashboard-component.component';
+import { DashboardComponent } from './dashboard.component';
 
-let component: DashboardComponentComponent;
-let fixture: ComponentFixture<DashboardComponentComponent>;
+let component: DashboardComponent;
+let fixture: ComponentFixture<DashboardComponent>;
 
 describe('dashboard-component component', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [ DashboardComponentComponent ],
+            declarations: [ DashboardComponent ],
             imports: [ BrowserModule ],
             providers: [
                 { provide: ComponentFixtureAutoDetect, useValue: true }
             ]
         });
-        fixture = TestBed.createComponent(DashboardComponentComponent);
+        fixture = TestBed.createComponent(DashboardComponent);
         component = fixture.componentInstance;
     }));
 
