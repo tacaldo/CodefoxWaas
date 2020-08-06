@@ -10,3 +10,5 @@ export const JOBS: Job[] = [
   { id: 17, name: 'Mechanic Assistant' },
   { id: 18, name: 'Roofing Helper' }
 ];
+
+
